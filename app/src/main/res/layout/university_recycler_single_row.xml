@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_gradient">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+
+                android:id="@+id/UniversityImage"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center|end"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginRight="50dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_account_circle_black_24dp"
+                app:civ_border_color="@color/Black"
+                app:civ_border_width="2dp"
+                app:civ_circle_background_color="@color/Black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.432"
+
+                app:layout_constraintStart_toEndOf="@id/UniversityAddress"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/UniversityName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="University Name:"
+                android:textColor="@color/Black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.088" />
+
+            <TextView
+                android:id="@+id/UniversityVision"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="University Vision:"
+
+                android:textColor="@color/Black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/UniversityName"
+                app:layout_constraintVertical_bias="0.088" />
+
+
+            <TextView
+                android:id="@+id/UniversityAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="University Address:"
+
+                android:textColor="@color/Black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/UniversityVision"
+                app:layout_constraintVertical_bias="0.088" />
+
+            <TextView
+                android:id="@+id/UniversityContact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="University Contact:"
+
+                android:textColor="@color/Black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/UniversityAddress"
+                app:layout_constraintVertical_bias="0.088" />
+
+            <TextView
+                android:id="@+id/UniversityURL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="University URL:"
+                android:textColor="@color/Black"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/UniversityContact"
+                app:layout_constraintVertical_bias="0.088" />
+
+            <TextView
+                android:id="@+id/UniversityExpertise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="University Expertise:"
+                android:textColor="@color/Black"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/UniversityURL"
+                app:layout_constraintVertical_bias="0.088" />
+
+
+            <androidx.appcompat.widget.AppCompatRatingBar
+                android:id="@+id/simpleRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:rating="5"
+                android:scaleX="0.4"
+                android:progressTint="#ffbc00"
+                android:backgroundTint="@color/Black"
+                android:scaleY="0.4"
+                style="@style/RatingBar"
+                app:layout_constraintTop_toBottomOf="@id/UniversityExpertise"
+                app:layout_constraintStart_toStartOf="parent" />
+            <TextView
+                android:id="@+id/UniversityReviews"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="University Reviews:"
+                android:textColor="@color/White"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/simpleRatingBar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="9dp"
+                app:layout_constraintVertical_bias="0.088" />
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+
+
+

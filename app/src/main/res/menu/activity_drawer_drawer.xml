@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/dashboard"
+            android:icon="@drawable/home_icon"
+            android:title="Dashboard" />
+        <item
+            android:id="@+id/Projects"
+            android:icon="@drawable/icon_project"
+            android:title="Projects" />
+
+        <item
+            android:id="@+id/Universities"
+            android:title="Universities"
+            android:icon="@drawable/icon_university"/>
+        <item
+            android:id="@+id/Collaboration"
+            android:icon="@drawable/icon_collaboration"
+            android:title="Collaborations"
+
+            />
+
+    </group>
+
+    <!--line-->
+
+    <item android:title="Communicate">
+        <menu>
+           <!-- <item
+                android:id="@+id/my_accounts"
+                android:icon="@drawable/icon_myaccount"
+                android:title="My Accounts" />
+           -->
+
+            <item
+                android:id="@+id/Logout"
+                android:icon="@drawable/ic_power_settings_new_black_24dp"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>
